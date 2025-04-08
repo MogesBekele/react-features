@@ -64,7 +64,7 @@ const App = () => {
       <form onSubmit={handleSubmit} className="mt-8">
       {
         submittedName && (
-          <p className="text-lg mt-4">
+          <p className="text-2xl mt-4 ">
             Hello, {submittedName}! Welcome to the Counter App.
           </p>
         )
