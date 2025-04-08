@@ -52,6 +52,13 @@ const App = () => {
           Toggle Dark Mode
         </button>
       </div>
+
+
+
+      <form action="">
+
+        <input type="text"  />
+      </form>
     </div>
   );
 };
