@@ -4,6 +4,8 @@ import { useState } from "react";
 const App = () => {
   const [count, setCount] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [name, setName] = useState("");
+  const [submittedName, setSubmittedName] = useState("");
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
