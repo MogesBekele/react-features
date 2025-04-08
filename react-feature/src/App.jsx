@@ -8,7 +8,7 @@ const App = () => {
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
     document.documentElement.classList.toggle("dark", !isDarkMode);
-    document.documentElement.classList.toggle("light", isDarkMode);
+   
 
   
 
