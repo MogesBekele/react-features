@@ -61,7 +61,7 @@ const App = () => {
 
 
 
-      <form className="mt-4">
+      <form onSubmit={handleSubmit} className="mt-4">
         <label className="block mb-2 text-lg">Enter your name:</label>
 
         <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
