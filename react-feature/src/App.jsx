@@ -11,6 +11,12 @@ const App = () => {
     setIsDarkMode((prevMode) => !prevMode);
   };
 
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    setSubmittedName(name);
+    setName("");
+  }
+
   return (
     <div
       className={`flex flex-col items-center justify-center min-h-screen ${
@@ -59,6 +65,8 @@ const App = () => {
         <label className="block mb-2 text-lg">Enter your name:</label>
 
         <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
+
+        <button type="submit"  className="bg-blue-500 text-white rounded px-6 py-2 ml-4">Submit</button>
       </form>
     </div>
   );
