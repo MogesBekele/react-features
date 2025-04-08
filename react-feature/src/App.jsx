@@ -68,6 +68,14 @@ const App = () => {
 
         <button type="submit"  className="bg-blue-500 text-white rounded px-6 py-2 ml-4">Submit</button>
       </form>
+
+      {
+        submittedName && (
+          <p className="text-lg mt-4">
+            Hello, {submittedName}! Welcome to the Counter App.
+          </p>
+        )
+      }
     </div>
   );
 };
