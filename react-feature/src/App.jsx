@@ -12,7 +12,7 @@ const App = () => {
     document.body.classList.toggle("bg-gray-900", !isDarkMode);
     document.body.classList.toggle("bg-white", isDarkMode);
     document.body.classList.toggle("text-white", !isDarkMode);
-    document.body.classList.toggle("text-gray-900", isDarkMode);
+ 
   };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
