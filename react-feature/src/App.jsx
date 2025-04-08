@@ -55,9 +55,10 @@ const App = () => {
 
 
 
-      <form action="">
+      <form className="mt-4">
+        <label className="block mb-2 text-lg">Enter your name:</label>
 
-        <input type="text"  />
+        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
       </form>
     </div>
   );
