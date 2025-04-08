@@ -61,7 +61,7 @@ const App = () => {
 
 
 
-      <form onSubmit={handleSubmit} className="mt-4">
+      <form onSubmit={handleSubmit} className="mt-8">
       {
         submittedName && (
           <p className="text-lg mt-4">
@@ -69,7 +69,7 @@ const App = () => {
           </p>
         )
       }
-        <input type="text"    className="border border-gray-400 rounded px-4 py-2" value={name} onChange={(e)=>setName(e.target.value)} />
+        <input type="text"    className="border border-gray-400 rounded px-4 py-2 mt-6" value={name} onChange={(e)=>setName(e.target.value)} />
 
         <button type="submit"  className="bg-blue-500 text-white rounded px-6 py-2 ml-4">Submit</button>
       </form>
