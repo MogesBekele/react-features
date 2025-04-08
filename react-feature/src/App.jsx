@@ -10,7 +10,7 @@ const App = () => {
     document.documentElement.classList.toggle("dark", !isDarkMode);
     document.documentElement.classList.toggle("light", isDarkMode);
     document.body.classList.toggle("bg-gray-900", !isDarkMode);
-    document.body.classList.toggle("bg-white", isDarkMode);
+  
 
  
   };
