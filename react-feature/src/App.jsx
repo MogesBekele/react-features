@@ -62,13 +62,6 @@ const App = () => {
 
 
       <form onSubmit={handleSubmit} className="mt-4">
-        <label className="block mb-2 text-lg">Enter your name:</label>
-
-        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
-
-        <button type="submit"  className="bg-blue-500 text-white rounded px-6 py-2 ml-4">Submit</button>
-      </form>
-
       {
         submittedName && (
           <p className="text-lg mt-4">
@@ -76,6 +69,12 @@ const App = () => {
           </p>
         )
       }
+        <input type="text"    className="border border-gray-400 rounded px-4 py-2" value={name} onChange={(e)=>setName(e.target.value)} />
+
+        <button type="submit"  className="bg-blue-500 text-white rounded px-6 py-2 ml-4">Submit</button>
+      </form>
+
+  
     </div>
   );
 };
