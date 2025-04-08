@@ -11,7 +11,9 @@ const App = () => {
       </h1>
 
       <p className="text-lg text-gray-700">
-        This is a simple React application using Tailwind CSS for styling.
+
+        the following is a simple counter app using react and tailwind css
+       
       </p>
 
 
