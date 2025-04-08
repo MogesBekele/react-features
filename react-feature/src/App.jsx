@@ -8,12 +8,17 @@ const App = () => {
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
   };
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-gray-800">Counter App</h1>
 
-      <p className="text-lg text-gray-700 mt-2">
-        the following is a simple counter app using react and tailwind css
+  return (
+    <div
+      className={`flex flex-col items-center justify-center min-h-screen ${
+        isDarkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-800"
+      }`}
+    >
+      <h1 className="text-4xl font-bold">Counter App</h1>
+
+      <p className="text-lg mt-2">
+        The following is a simple counter app using React and Tailwind CSS
       </p>
 
       <p className="text-lg text-green-400">Current count: {count}</p>
@@ -22,20 +27,20 @@ const App = () => {
           className="bg-amber-700 text-white rounded-full px-6 py-2"
           onClick={() => setCount((count) => count + 1)}
         >
-          count
+          Increment
         </button>
 
         <button
-          className="bg-amber-700 text-white rounded-full px-6 py-2 c"
+          className="bg-amber-700 text-white rounded-full px-6 py-2"
           onClick={() => setCount((count) => count - 1)}
         >
-          decrement
+          Decrement
         </button>
         <button
           className="bg-amber-700 text-white rounded-full px-6 py-2"
           onClick={() => setCount(0)}
         >
-          reset
+          Reset
         </button>
 
         <button
