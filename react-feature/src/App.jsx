@@ -4,6 +4,16 @@ import { useState } from "react";
 const App = () => {
   const [count, setCount] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+    document.documentElement.classList.toggle("dark", !isDarkMode);
+    document.documentElement.classList.toggle("light", isDarkMode);
+    document.body.classList.toggle("bg-gray-900", !isDarkMode);
+    document.body.classList.toggle("bg-white", isDarkMode);
+    document.body.classList.toggle("text-white", !isDarkMode);
+    document.body.classList.toggle("text-gray-900", isDarkMode);
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-4xl font-bold text-gray-800">Counter App</h1>
