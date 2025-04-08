@@ -18,7 +18,7 @@ const App = () => {
       <p className="text-lg text-green-400">
         Current count: {count}
      </p>
-      <div className='flex gap-4'>
+      <div className='flex gap-4 mt-4'>
       <button className='bg-amber-700 text-white rounded-full px-6 py-2'  onClick={()=>setCount(count=> count+1)}>count</button>
 
       <button className='bg-amber-700 text-white rounded-full px-6 py-2 c' onClick={()=>setCount(count=> count-1)}>decrement</button>
