@@ -5,7 +5,7 @@ const App = () => {
   const [count, setCount] = useState(0);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <h1 className="text-4xl font-bold text-gray-800">Counter App</h1>
 
       <p className="text-lg text-gray-700">
         the following is a simple counter app using react and tailwind css
