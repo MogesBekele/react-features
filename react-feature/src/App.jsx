@@ -19,7 +19,10 @@ const App = () => {
         Current count: {count}
      </p>
       
-      <button className='bg-amber-700 text-white rounded-2xl px-4 py-2'  onClick={()=>setCount(count=> count+1)}>count</button>
+      <button className='bg-amber-700 text-white rounded-full px-6 py-2'  onClick={()=>setCount(count=> count+1)}>count</button>
+
+      <button className='bg-amber-700 text-white rounded-full px-6 py-2' onClick={()=>setCount(count=> count-1)}>decrement</button>
+      <button className='bg-amber-700 text-white rounded-full px-6 py-2' onClick={()=>setCount(0)}>reset</button>
     </div>
   )
 }
