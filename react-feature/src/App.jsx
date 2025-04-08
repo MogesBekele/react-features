@@ -43,6 +43,13 @@ const App = () => {
         >
           reset
         </button>
+
+        <button
+          className="bg-amber-700 text-white rounded-full px-6 py-2"
+          onClick={toggleDarkMode}
+        >
+          Toggle Dark Mode
+        </button>
       </div>
     </div>
   );
