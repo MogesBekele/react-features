@@ -11,6 +11,11 @@ const App = () => {
       <p className="text-lg text-gray-700">
         This is a simple React application using Tailwind CSS for styling.
       </p>
+
+
+      <p className="text-lg text-gray-700">
+        This is a simple React application using Tailwind CSS for styling.
+        This is a simple React application using Tailwind CSS for styling.</p>
       
     </div>
   )
