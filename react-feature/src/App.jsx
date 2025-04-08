@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 
 const App = () => {
-  const [count, setCount] = React.useState(0)
+  const [count, setCount] = useState(0)
   return (
     <div>
 
@@ -16,9 +16,10 @@ const App = () => {
 
 
       <p className="text-lg text-gray-700">
-        This is a simple React application using Tailwind CSS for styling.
-        This is a simple React application using Tailwind CSS for styling.</p>
+        Current count: {count}
+     </p>
       
+      <button onClick={()=>setCount(count=> count+1)}>count</button>
     </div>
   )
 }
