@@ -15,11 +15,11 @@ const App = () => {
       </p>
 
 
-      <p className="text-lg text-gray-700">
+      <p className="text-lg text-green-400">
         Current count: {count}
      </p>
       
-      <button onClick={()=>setCount(count=> count+1)}>count</button>
+      <button className='bg-amber-700 text-white rounded-2xl px-4 py-2'  onClick={()=>setCount(count=> count+1)}>count</button>
     </div>
   )
 }
