@@ -22,7 +22,13 @@ const UseEffect = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds((prevSeconds) => prevSeconds + 1);
+      setSeconds((prevSeconds) => {
+        if (prevSeconds >= 30) {
+          clearInterval(interval); // Clear the interval after 30 seconds
+          return prevSeconds; // Stop incrementing
+        }
+        return prevSeconds + 1;
+      });
     }, 1000);
 
     // Cleanup function to clear the interval when the component unmounts
