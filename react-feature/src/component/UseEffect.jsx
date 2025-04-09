@@ -40,6 +40,10 @@ const UseEffect = () => {
           <ul>
             <li key={index} className='text-lg text-green-400'>{item.title}</li>
           </ul>
+
+          <div key={index} className='flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800'>
+            <p className='text-lg text-green-400'>{item.body}</p>
+          </div>
           
           </div>
         })
