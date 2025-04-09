@@ -34,11 +34,16 @@ const UseEffect = () => {
       {loading ? (
         <p className='text-lg text-green-400'>Loading...</p>
       ) : (
-        <ul className='list-disc list-inside'>
-          {fetchData.map((item) => (
-            <li key={item.id} className='text-lg text-blue-600'>{item.title}</li>
-          ))}
-        </ul>
+        fetchData.map((item, index)=>{
+          <div>
+
+          <ul>
+            <li key={index} className='text-lg text-green-400'>{item.title}</li>
+          </ul>
+          
+          </div>
+        })
+      
       )}
       
     </div>
