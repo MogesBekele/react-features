@@ -1,10 +1,11 @@
 import React from 'react'
-import usestate from './component/usestate.jsx'
+import Usestate from './component/usestate'
+
 
 const App = () => {
   return (
     <div>
-      <usestate />
+      <Usestate />
       
     </div>
   )

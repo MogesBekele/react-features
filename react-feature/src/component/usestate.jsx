@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const usestate = () => {
+const Usestate = () => {
   const [count, setCount] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [name, setName] = useState("");
@@ -79,5 +79,5 @@ const usestate = () => {
   );
 };
 
-export default usestate;
+export default Usestate;
 
