@@ -31,19 +31,19 @@ const UseEffect = () => {
         The following is a simple useEffect example using React and Tailwind CSS
       </p>
       <p className="text-lg text-green-400">Data fetched from API:</p>
-
       {loading ? (
         <p className="text-lg text-green-400">Loading...</p>
       ) : (
-        fetchData.map((item, index) => {
+        fetchData.map((item, index) => (
           <div key={index}>
             <ul>
               <li className="text-lg text-green-400">{item.title}</li>
             </ul>
-
-           
-          </div>;
-        })
+            <div className="flex flex-col items-center justify-center  bg-gray-100 text-gray-800">
+              <p className="text-lg text-green-400">{item.body}</p>
+            </div>
+          </div>
+        ))
       )}
     </div>
   );
