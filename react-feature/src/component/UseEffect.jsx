@@ -4,6 +4,7 @@ const UseEffect = () => {
   const [fetchData, setFetchData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [seconds, setSeconds] = useState(0);
+  
 
   const fetchDataFromApi = async () => {
     setLoading(true);
