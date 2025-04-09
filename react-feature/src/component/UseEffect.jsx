@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-
+import { useState } from 'react'
 const UseEffect = () => {
   // useEffect is a hook that allows you to perform side effects in function components.
-  const [fetchData, setFetchData] = React.useState([])
-  const [loading, setLoading] = React.useState(false)
+  const [fetchData, setFetchData] = useState([])
+  const [loading, setLoading] = useState(false)
 
 
   const fetchDataFromApi = async () => {
@@ -21,7 +21,7 @@ const UseEffect = () => {
 
   useEffect(()=>{
     fetchDataFromApi()
-  })
+  },[])
 
 
   return (
