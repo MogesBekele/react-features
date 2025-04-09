@@ -26,6 +26,20 @@ const UseEffect = () => {
 
   return (
     <div>
+
+      <h1 className='text-4xl font-bold'>UseEffect</h1>
+      <p className='text-lg mt-2'>The following is a simple useEffect example using React and Tailwind CSS</p>
+      <p className='text-lg text-green-400'>Data fetched from API:</p>
+
+      {loading ? (
+        <p className='text-lg text-green-400'>Loading...</p>
+      ) : (
+        <ul className='list-disc list-inside'>
+          {fetchData.map((item) => (
+            <li key={item.id} className='text-lg text-green-400'>{item.title}</li>
+          ))}
+        </ul>
+      )}
       
     </div>
   )
