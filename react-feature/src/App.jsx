@@ -8,7 +8,7 @@ const App = () => {
   const [submittedName, setSubmittedName] = useState("");
 
   const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
+    setIsDarkMode((prevMode) => !prevMode);// toogle the browser
   };
 
   const handleSubmit = (e)=>{
