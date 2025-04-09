@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const UseEffect = () => {
   // useEffect is a hook that allows you to perform side effects in function components.
@@ -19,11 +19,9 @@ const UseEffect = () => {
     }
   }
 
-
- 
-
-
-
+  useEffect(()=>{
+    fetchDataFromApi()
+  })
 
 
   return (
