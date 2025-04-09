@@ -6,6 +6,21 @@ const UseEffect = () => {
   const [loading, setLoading] = React.useState(false)
 
 
+  const fetchDataFromApi = async () => {
+    setLoading(true)
+    try {
+      const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+      const data = await response.json()
+      setFetchData(data)
+    } catch (error) {
+      console.error("Error fetching data:", error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+
+ 
 
 
 
