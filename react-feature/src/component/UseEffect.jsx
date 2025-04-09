@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+
 const UseEffect = () => {
-  // useEffect is a hook that allows you to perform side effects in function components.
   const [fetchData, setFetchData] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -25,25 +24,29 @@ const UseEffect = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800">
-      <h1 className="text-4xl font-bold">UseEffect</h1>
-      <p className="text-lg mt-2">
-        The following is a simple useEffect example using React and Tailwind CSS
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800 p-4">
+      <h1 className="text-4xl font-bold mb-4">UseEffect Example</h1>
+      <p className="text-lg mb-4">
+        The following is a simple useEffect example using React and Tailwind
+        CSS.
       </p>
-      <p className="text-lg text-green-400">Data fetched from API:</p>
+      <p className="text-lg text-green-500 mb-4">Data fetched from API:</p>
       {loading ? (
-        <p className="text-lg text-green-400">Loading...</p>
+        <p className="text-lg text-blue-500">Loading...</p>
       ) : (
-        fetchData.map((item, index) => (
-          <div key={index}>
-            <ul>
-              <li className="text-lg text-green-400">{item.title}</li>
-            </ul>
-            <div className="flex flex-col items-center justify-center  bg-gray-100 text-gray-800">
-              <p className="text-lg text-green-400">{item.body}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+          {fetchData.slice(0,10).map((item) => (
+            <div
+              key={item.id}
+              className="border border-gray-300 rounded-lg p-4 shadow-md bg-white"
+            >
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                {item.title}
+              </h2>
+              <p className="text-gray-600">{item.body}</p>
             </div>
-          </div>
-        ))
+          ))}
+        </div>
       )}
     </div>
   );
