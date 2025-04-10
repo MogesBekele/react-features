@@ -13,6 +13,10 @@ const Usestate = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!name) {
+      alert("Please enter your name.");
+      return;
+    }
     setSubmittedName(name);
     setName("");
   };
