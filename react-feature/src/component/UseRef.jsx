@@ -17,7 +17,7 @@ const UseRef = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-800 text-gray-800 p-4">
+    <div className="flex flex-col items-center justify-center p-4">
       <h1 className="text-4xl font-bold mb-4">UseRef Example</h1>
       <p className="text-lg mb-4">
         The following is a simple useRef example using React and Tailwind CSS.
