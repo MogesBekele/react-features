@@ -1,6 +1,7 @@
 import React from 'react'
 import Usestate from './component/usestate'
 import UseEffect from './component/UseEffect'
+import UseRef from './component/UseRef'
 
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <Usestate />
       <UseEffect/>
+      <UseRef/>
       
     </div>
   )
