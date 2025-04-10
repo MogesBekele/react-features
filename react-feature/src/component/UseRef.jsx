@@ -5,11 +5,11 @@ import { useState } from "react";
 const UseRef = () => {
   const [editor, setEditor] = useState(null);
   const editorRef = useRef(null);
+  const inputRef = useRef(null);
 
   const handleRef = (e) => {
     // Prevent the default form submission behavior
     e.preventDefault();
-
 
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
@@ -22,6 +22,11 @@ const UseRef = () => {
 
     inputElement.value = "";
   };
+  const handleFocus = () => {
+    // Focus the input element using the ref
+    inputRef.current.focus();
+  };
+
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
@@ -47,6 +52,18 @@ const UseRef = () => {
           submit
         </button>
       </div>
+      <input
+        type="text"
+        ref={inputRef}
+        placeholder="Type something..."
+        className="border border-gray-300 rounded-lg p-2 mb-4 w-1/2"
+      />
+      <button
+        className="rounded-full px-6 py-2 bg-blue-500 text-white"
+        onClick={handleFocus}
+      >
+        Focus Input
+      </button>
     </div>
   );
 };
