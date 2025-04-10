@@ -7,8 +7,12 @@ const UseRef = () => {
   const editorRef = useRef(null);
 
   const handleRef = (e) => {
+    // Prevent the default form submission behavior
+    // This is important to prevent the page from refreshing
     e.preventDefault();
 
+    // Access the input element using the ref and get its value
+    // Then set the value to the state variable
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
     setEditor(inputValue);
