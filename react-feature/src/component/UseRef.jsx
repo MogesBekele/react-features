@@ -11,8 +11,9 @@ const UseRef = () => {
   const handleRef = (e) => {
     // Access the input element using the ref
 
-    const ref = e.editorRef.current.value;
-    setEditor(ref);
+    const inputElement = editorRef.current;
+    const inputValue = inputElement.value;
+    setEditor(inputValue);
   };
 
   return (
@@ -32,7 +33,7 @@ const UseRef = () => {
           className="border border-gray-300 rounded-lg p-2 mb-4 w-1/2"
         />
 
-        <button className="rounded-full px-6 py-2 bg-amber-500 text-black" onClick={handleRef}></button>
+        <button className="rounded-full px-6 py-2 bg-amber-500 text-black" onClick={handleRef}>submit</button>
       </div>
     </div>
   );
