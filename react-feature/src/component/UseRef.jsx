@@ -7,7 +7,7 @@ const UseRef = () => {
   const editorRef = useRef(null);
 
   const handleRef = (e) => {
-    // Access the input element using the ref
+ 
 
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
