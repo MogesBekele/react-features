@@ -7,6 +7,7 @@ const UseRef = () => {
   const editorRef = useRef(null);
 
   const handleRef = (e) => {
+    // Prevent the default form submission behavior
     e.preventDefault();
 
     const inputElement = editorRef.current;
