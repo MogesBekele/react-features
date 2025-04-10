@@ -3,8 +3,6 @@ import { useRef } from "react";
 import { useState } from "react";
 
 const UseRef = () => {
- 
-
   const [editor, setEditor] = useState(null);
   const editorRef = useRef(null);
 
@@ -14,7 +12,7 @@ const UseRef = () => {
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
     setEditor(inputValue);
-   
+
     inputElement.value = "";
   };
 
@@ -35,7 +33,12 @@ const UseRef = () => {
           className="border border-gray-300 rounded-lg p-2 mb-4 w-1/2"
         />
 
-        <button className="rounded-full px-6 py-2 bg-amber-500 text-black" onClick={handleRef}>submit</button>
+        <button
+          className="rounded-full px-6 py-2 bg-amber-500 text-black"
+          onClick={handleRef}
+        >
+          submit
+        </button>
       </div>
     </div>
   );
