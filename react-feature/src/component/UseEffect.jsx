@@ -41,16 +41,16 @@ const UseEffect = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white p-8">
-      <h1 className="text-5xl font-extrabold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+      <h1 className="text-5xl font-extrabold mb-8 lg:mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
         useEffect Example
       </h1>
-      <p className="text-lg mb-10 text-center max-w-3xl">
+      <p className="text-lg mb-10 lg:mb-6 text-center max-w-3xl">
         This is a demonstration of the{" "}
         <span className="font-semibold text-blue-400">useEffect</span> hook in
         React, styled with Tailwind CSS for a modern look.
       </p>
       <div className="bg-gray-100 text-gray-900 rounded-xl shadow-2xl p-8 w-full max-w-6xl">
-        <h2 className="text-3xl font-bold mb-6 text-center">
+        <h2 className="text-3xl font-bold mb-6 lg:mb-4 text-center">
           Data fetched from API:
         </h2>
         {loading ? (
@@ -71,8 +71,10 @@ const UseEffect = () => {
           </div>
         )}
       </div>
-      <div className="bg-gray-100 text-gray-900 rounded-xl shadow-2xl p-8 w-full max-w-md mt-12">
-        <h2 className="text-3xl font-bold mb-6 text-center">Timer Example</h2>
+      <div className="bg-gray-100 text-gray-900 rounded-xl shadow-2xl p-8 w-full max-w-md mt-12 lg:mt-8">
+        <h2 className="text-3xl font-bold mb-6 lg:mb-4 text-center">
+          Timer Example
+        </h2>
         <p className="text-lg text-green-500 text-center">
           Seconds elapsed: <span className="font-extrabold">{seconds}</span>
         </p>
