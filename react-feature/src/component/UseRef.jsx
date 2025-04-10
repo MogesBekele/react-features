@@ -10,8 +10,14 @@ const UseRef = () => {
     // Prevent the default form submission behavior
     e.preventDefault();
 
+
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
+    // Check if the input value is empty
+    if (!inputValue) {
+      alert("Please enter a value.");
+      return;
+    }
     setEditor(inputValue);
 
     inputElement.value = "";
