@@ -7,14 +7,12 @@ const UseRef = () => {
   const editorRef = useRef(null);
 
   const handleRef = (e) => {
-  
     e.preventDefault();
 
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
     setEditor(inputValue);
 
-    // Clear the input field after submission
     inputElement.value = "";
   };
 
