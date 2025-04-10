@@ -29,10 +29,10 @@ const UseRef = () => {
           type="text"
           id="input"
           ref={editorRef}
-          className="border border-gray-300 rounded-lg p-2 mb-4 w-full"
+          className="border border-gray-300 rounded-lg p-2 mb-4 w-1/2"
         />
 
-        <button onClick={handleRef}></button>
+        <button className="rounded-full px-6 py-2 bg-amber-500 text-black" onClick={handleRef}></button>
       </div>
     </div>
   );
