@@ -8,76 +8,87 @@ const Usestate = () => {
   const [submittedName, setSubmittedName] = useState("");
 
   const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);// toogle the browser
+    setIsDarkMode((prevMode) => !prevMode); // Toggle dark mode
   };
 
-  const handleSubmit = (e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmittedName(name);
     setName("");
-  }
+  };
 
   return (
     <div
       className={`flex flex-col items-center justify-center min-h-screen ${
         isDarkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-800"
-      }`}
+      } transition duration-500`}
     >
-      <h1 className="text-4xl font-bold">Counter App</h1>
+      <h1 className="text-5xl font-extrabold mb-6 text-center">Counter App</h1>
 
-      <p className="text-lg mt-2">
-        The following is a simple counter app using React and Tailwind CSS
+      <p className="text-lg mb-4 text-center max-w-2xl">
+        This is a simple counter app using React and Tailwind CSS. You can
+        increment, decrement, or reset the counter, and toggle between light and
+        dark modes.
       </p>
 
-      <p className="text-lg text-green-400">Current count: {count}</p>
-      <div className="flex gap-4 mt-4">
+      <p className="text-2xl font-bold text-green-400 mb-6">
+        Current count: {count}
+      </p>
+
+      <div className="flex gap-4 mb-8">
         <button
-          className="bg-amber-700 text-white rounded-full px-6 py-2"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full px-6 py-2 transition duration-300"
           onClick={() => setCount((count) => count + 1)}
         >
           Increment
         </button>
 
         <button
-          className="bg-amber-700 text-white rounded-full px-6 py-2"
+          className="bg-red-500 hover:bg-red-600 text-white font-semibold rounded-full px-6 py-2 transition duration-300"
           onClick={() => setCount((count) => count - 1)}
         >
           Decrement
         </button>
+
         <button
-          className="bg-amber-700 text-white rounded-full px-6 py-2"
+          className="bg-gray-500 hover:bg-gray-600 text-white font-semibold rounded-full px-6 py-2 transition duration-300"
           onClick={() => setCount(0)}
         >
           Reset
         </button>
 
         <button
-          className="bg-amber-700 text-white rounded-full px-6 py-2"
+          className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-full px-6 py-2 transition duration-300"
           onClick={toggleDarkMode}
         >
           Toggle Dark Mode
         </button>
       </div>
 
-
-
-      <form onSubmit={handleSubmit} className="mt-8">
-      {
-        submittedName && (
-          <p className="text-2xl mt-4 ">
+      <form onSubmit={handleSubmit} className="w-full max-w-md">
+        {submittedName && (
+          <p className="text-2xl font-semibold text-center mb-4 bg-green-100 text-green-800 p-4 rounded-lg shadow-md">
             Hello, {submittedName}! Welcome to the Counter App.
           </p>
-        )
-      }
-        <input type="text"    className="border border-gray-400 rounded px-4 py-2 mt-6" value={name} onChange={(e)=>setName(e.target.value)} />
-
-        <button type="submit"  className="bg-blue-500 text-white rounded px-6 py-2 ml-4">Submit</button>
+        )}
+        <div className="flex items-center gap-4">
+          <input
+            type="text"
+            className="border border-gray-400 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Enter your name"
+          />
+          <button
+            type="submit"
+            className="bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg px-6 py-2 transition duration-300"
+          >
+            Submit
+          </button>
+        </div>
       </form>
-
-  
     </div>
   );
 };
 
 export default Usestate;
-
