@@ -12,7 +12,7 @@ const UseRef = () => {
     e.preventDefault();
 
     // Access the input element using the ref and get its value
-    // Then set the value to the state variable
+  
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
     setEditor(inputValue);
