@@ -38,7 +38,7 @@ const UseRef = () => {
           Enter a Value:
         </label>
         <input
-        placeholder="enter anything you"
+        placeholder="enter anything you "
           type="text"
           id="input"
           ref={editorRef}
