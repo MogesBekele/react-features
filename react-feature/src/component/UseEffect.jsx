@@ -32,7 +32,7 @@ const UseEffect = () => {
       });
     }, 1000);
 
-    // Cleanup function to clear the interval when the component unmounts
+    // Cleanup function to clear the interval when the component unmount
     return () => clearInterval(interval);
   }, []); // Empty dependency array ensures this runs only once
 
