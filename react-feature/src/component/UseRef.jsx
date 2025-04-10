@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const UseRef = () => {
   const [inputRef, setInputRef] = useState(null);
-  const [textAreaRef, setTextAreaRef] = useState(null);
+
   const [editor, setEditor] = useState(null);
   const editorRef = useRef(null);
 
