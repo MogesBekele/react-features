@@ -14,6 +14,8 @@ const UseRef = () => {
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
     setEditor(inputValue);
+    // Clear the input field after submission
+    inputElement.value = "";
   };
 
   return (
