@@ -11,8 +11,6 @@ const UseRef = () => {
     // This is important to prevent the page from refreshing
     e.preventDefault();
 
-    // Access the input element using the ref and get its value
-  
     const inputElement = editorRef.current;
     const inputValue = inputElement.value;
     setEditor(inputValue);
