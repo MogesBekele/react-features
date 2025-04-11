@@ -20,7 +20,7 @@ const Context = (props) => {
   };
   return (
     <div>
-      <AppContext.Provider value={value}>{children}</AppContext.Provider>
+      <AppContext.Provider value={value}>{props.children}</AppContext.Provider>
     </div>
   );
 };
