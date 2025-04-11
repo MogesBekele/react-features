@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { useRef } from "react"; // Import useRef for the inputRef
+import { useRef } from "react";
 
 export const AppContext = createContext(); 
 
