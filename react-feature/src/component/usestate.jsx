@@ -37,7 +37,8 @@ const Usestate = () => {
         isDarkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-800"
       } transition duration-500`}
     >
-      <h1 className="text-5xl font-extrabold mb-6 text-center">Counter App</h1>
+         <h1 className="text-5xl font-bold mb-6">useState Example</h1>
+      <h4 className="text-5xl font-bold mb-6 text-center">Counter App</h4>
 
       <p className="text-lg mb-4 text-center max-w-2xl">
         This is a simple counter app using React and Tailwind CSS. You can
