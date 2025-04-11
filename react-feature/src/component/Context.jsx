@@ -7,6 +7,9 @@ const Context = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [name, setName] = useState("");
   const [submittedName, setSubmittedName] = useState("");
+    const [fetchData, setFetchData] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [seconds, setSeconds] = useState(0);
 
   const value = {
     count,
