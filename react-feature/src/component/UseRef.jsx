@@ -5,7 +5,7 @@ import { AppContext } from "./Context";
 const UseRef = () => {
 const {  editor,
   setEditor,
-  editorRef} =useContext(AppContext);
+  editorRef, inputRef} =useContext(AppContext);
 
   const handleRef = (e) => {
     e.preventDefault();
