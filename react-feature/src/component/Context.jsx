@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import { useRef } from "react"; // Import useRef for the inputRef
 
-export const AppContext = createContext(); // Keep this export if needed elsewhere
+export const AppContext = createContext(); 
 
 const Context = ({ children }) => {
   // the following are context for usestate component
