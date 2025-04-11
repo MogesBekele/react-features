@@ -1,11 +1,21 @@
 import React from "react";
-import { useState } from "react";
+import { useContext } from "react";
+
+import { AppConext } from "./Context";
+
+import { useContext } from "react";
 
 const Usestate = () => {
-  const [count, setCount] = useState(0);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [name, setName] = useState("");
-  const [submittedName, setSubmittedName] = useState("");
+  const {
+    count,
+    setCount,
+    isDarkMode,
+    setIsDarkMode,
+    name,
+    setName,
+    submittedName,
+    setSubmittedName,
+  } = useContext(AppConext);
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode); // Toggle dark mode
