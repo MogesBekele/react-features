@@ -8,12 +8,13 @@ const Context = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [name, setName] = useState("");
   const [submittedName, setSubmittedName] = useState("");
+
   // the following are context for useeffect component
   const [fetchData, setFetchData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [seconds, setSeconds] = useState(0);
-  // the following are context for useRef component
 
+  // the following are context for useRef component
   const [editor, setEditor] = useState(null);
   const editorRef = useRef(null);
   const inputRef = useRef(null);
