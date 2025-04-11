@@ -1,7 +1,6 @@
 import React, { createContext, useState, useRef } from "react";
 
-
-export const AppContext = createContext(); 
+export const AppContext = createContext();
 
 const Context = ({ children }) => {
   // the following are context for usestate component
@@ -37,7 +36,7 @@ const Context = ({ children }) => {
     editor,
     setEditor,
     editorRef,
-    inputRef
+    inputRef,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
