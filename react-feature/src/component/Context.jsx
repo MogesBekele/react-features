@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext } from "react";
 
-const AppContext = createContext();
+export const AppContext = createContext();
 const Context = (props) => {
   const [count, setCount] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
