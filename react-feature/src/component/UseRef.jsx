@@ -1,11 +1,11 @@
-import React from "react";
-import { useRef } from "react";
-import { useState } from "react";
+import React, { useContext } from "react";
+
+import { AppContext } from "./Context";
 
 const UseRef = () => {
-  const [editor, setEditor] = useState(null);
-  const editorRef = useRef(null);
-  const inputRef = useRef(null);
+const {  editor,
+  setEditor,
+  editorRef} =useContext(AppContext);
 
   const handleRef = (e) => {
     e.preventDefault();
