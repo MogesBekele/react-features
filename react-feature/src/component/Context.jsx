@@ -20,6 +20,12 @@ const Context = ({ children }) => {
     setName,
     submittedName,
     setSubmittedName,
+    fetchData,
+    setFetchData,
+    loading,
+    setLoading,
+    seconds,
+    setSeconds,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

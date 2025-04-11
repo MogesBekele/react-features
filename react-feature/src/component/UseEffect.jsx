@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { AppContext } from "./Context";
 
 const UseEffect = () => {
-  const [fetchData, setFetchData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [seconds, setSeconds] = useState(0);
+  const { fetchData, setFetchData, loading, setLoading, seconds, setSeconds } =
+    useContext(AppContext);
 
   const fetchDataFromApi = async () => {
     setLoading(true);
