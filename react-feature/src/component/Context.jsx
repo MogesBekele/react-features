@@ -1,9 +1,8 @@
-import React from "react";
-import { createContext } from "react";
-import { useState } from "react";
+import React, { createContext, useState } from "react";
 
-export const AppContext = createContext();
-const Context = (props) => {
+export const AppContext = createContext(); // Keep this export if needed elsewhere
+
+const Context = ({ children }) => {
   const [count, setCount] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [name, setName] = useState("");
@@ -19,11 +18,8 @@ const Context = (props) => {
     submittedName,
     setSubmittedName,
   };
-  return (
-    <div>
-      <AppContext.Provider value={value}>{props.children}</AppContext.Provider>
-    </div>
-  );
+
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
 export default Context;
