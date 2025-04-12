@@ -32,7 +32,7 @@ const Usestate = () => {
   };
 
   return (
-    <div
+    <div id="usestate"
       className={`flex flex-col items-center justify-center min-h-screen ${
         isDarkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-800"
       } transition duration-500`}
