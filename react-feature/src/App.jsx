@@ -8,6 +8,7 @@ import Footer from './component/Footer'
 const App = () => {
   return (
     <div>
+      <Navbar/>
       <Usestate />
       <UseEffect/>
       <UseRef/>
