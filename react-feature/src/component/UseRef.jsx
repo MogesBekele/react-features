@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
-
 import { AppContext } from "./Context";
 
 const UseRef = () => {
-const {  editor,
-  setEditor,
-  editorRef, inputRef} =useContext(AppContext);
+  const { editor, setEditor, editorRef, inputRef } = useContext(AppContext);
 
   const handleRef = (e) => {
     e.preventDefault();
@@ -26,7 +23,10 @@ const {  editor,
   };
 
   return (
-    <div id="useref" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6 pt-26">
+    <div
+      id="useref"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500 text-white p-6"
+    >
       <h1 className="text-5xl font-bold mb-6">useRef Example</h1>
       <p className="text-lg mb-8 text-center">
         This is a demonstration of the{" "}
@@ -38,7 +38,7 @@ const {  editor,
           Enter a Value:
         </label>
         <input
-        placeholder="enter something"
+          placeholder="Enter something"
           type="text"
           id="input"
           ref={editorRef}
