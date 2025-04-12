@@ -25,7 +25,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      {/* Add padding to prevent content from being hidden behind the fixed navbar */}
+     
     
     </div>
   );
