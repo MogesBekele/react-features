@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
       </nav>
       {/* Add padding to prevent content from being hidden behind the fixed navbar */}
-      <div className="pt-20"></div>
+      <div className="pt-26"></div>
     </div>
   );
 };
