@@ -3,13 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-gray-800 text-white py-8 fixed top-0 w-full z-50 shadow-lg">
+      <nav  className="bg-gray-800 text-white py-8 fixed top-0 w-full z-50 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
-          <div>
-            <a className="text-2xl font-bold" href="#">
-              React Features
-            </a>
-          </div>
+          <div ><a className="text-2xl font-bold" href="#">React Features</a></div>
           <ul className="flex space-x-4">
             <li>
               <a href="#usestate" className="hover:text-blue-400">
@@ -30,7 +26,7 @@ const Navbar = () => {
         </div>
       </nav>
       {/* Add padding to prevent content from being hidden behind the fixed navbar */}
-      <div className="pt-28"></div>
+      <div className="pt-20"></div>
     </div>
   );
 };
