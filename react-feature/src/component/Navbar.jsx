@@ -22,6 +22,11 @@ const Navbar = () => {
                 UseRef
               </a>
             </li>
+            <li>
+              <a href="#usememo" className="hover:text-blue-400">
+                UseMemo
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
