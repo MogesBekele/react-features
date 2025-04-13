@@ -8,14 +8,14 @@ import UseMemo from './component/UseMemo'
 
 
 const App = () => {
-  const items = ["React", "JavaScript", "HTML", "CSS", "Node.js"];
+  
   return (
     <div>
       <Navbar/>
       <Usestate />
       <UseEffect/>
       <UseRef/>
-      <UseMemo items={items}/>
+      <UseMemo />
       <Footer/>
       
     </div>

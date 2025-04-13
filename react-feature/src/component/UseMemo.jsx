@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from "react";
 
-const UseMemo = ({ items = [] }) => {
+const UseMemo = () => {
   const [query, setQuery] = useState("");
-
+  const items = ["React", "JavaScript", "HTML", "CSS", "Node.js"];
   const filteredItems = useMemo(() => {
     console.log("Filtering items...");
     return items.filter((item) =>
