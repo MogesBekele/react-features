@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-i
+
 const UseMemo = ({ items = [] }) => {
   const [query, setQuery] = useState("");
 
