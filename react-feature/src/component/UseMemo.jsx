@@ -1,15 +1,14 @@
 import React, { useState, useMemo } from "react";
-
-const UseMemo = ({ items }) => {
+i
+const UseMemo = ({ items = [] }) => {
   const [query, setQuery] = useState("");
 
-  // useMemo to avoid recalculating filteredItems on every render
   const filteredItems = useMemo(() => {
     console.log("Filtering items...");
     return items.filter((item) =>
       item.toLowerCase().includes(query.toLowerCase())
     );
-  }, [items, query]); // only re-run when items or query changes
+  }, [items, query]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 text-white p-6">
