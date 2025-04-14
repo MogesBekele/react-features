@@ -133,8 +133,8 @@ const UseReducer = () => {
         </div>
       </form>
       <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 w-full max-w-md mt-6">
-        <p className="text-2xl font-bold mb-4 mt-4">Counter Value:</p>
-        <p className="text-3xl font-bold">{value}</p>
+        <p className="text-2xl font-bold mb-4 mt-4 inline-block">Counter Value:</p>
+        <p className="text-3xl font-bold inline-block">{value}</p>
         <div className="flex space-x-4 mt-4">
           <button
             onClick={() => dispatchValue({ type: "increment" })}
