@@ -6,7 +6,7 @@ const initialState = {
   email: "",
   password: "",
 };
-
+// Initial value for the counter
 const intialValue = 0;
 const reducerValue = (state, action) => {
   switch (action.type) {
