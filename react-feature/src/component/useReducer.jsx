@@ -32,7 +32,7 @@ const UseReducer = () => {
   };
 
   return (
-    <div  className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 text-white p-6">
+    <div id="usereducer"  className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 text-white p-6 pt-26">
       <h1 className="text-4xl font-bold mb-6">useReducer Form Example</h1>
       <form
         onSubmit={handleSubmit}
