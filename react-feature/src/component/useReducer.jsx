@@ -151,7 +151,7 @@ const UseReducer = () => {
           </button>
           <button
             onClick={() => dispatchValue({ type: "reset" })}
-            className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition duration-300"></button>
+            className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition duration-300">Reset</button>
         </div>
       </div>
     </div>
