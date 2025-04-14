@@ -17,8 +17,8 @@ const App = () => {
       <UseEffect/>
       <UseRef/>
       <UseMemo />
-      <Footer/>
       <UseReducer/>
+      <Footer/>
       
     </div>
   )

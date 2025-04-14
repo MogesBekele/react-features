@@ -32,7 +32,10 @@ const UseReducer = () => {
   };
 
   return (
-    <div id="usereducer"  className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 text-white p-6 pt-26">
+    <div
+      id="usereducer"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 text-white p-6 pt-26"
+    >
       <h1 className="text-4xl font-bold mb-6">useReducer Form Example</h1>
       <form
         onSubmit={handleSubmit}
@@ -43,12 +46,16 @@ const UseReducer = () => {
             Name:
           </label>
           <input
-          required
+            required
             type="text"
             id="name"
             value={state.name}
             onChange={(e) =>
-              dispatch({ type: "update_field", field: "name", value: e.target.value })
+              dispatch({
+                type: "update_field",
+                field: "name",
+                value: e.target.value,
+              })
             }
             className="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
@@ -58,27 +65,38 @@ const UseReducer = () => {
             Email:
           </label>
           <input
-          required
+            required
             type="email"
             id="email"
             value={state.email}
             onChange={(e) =>
-              dispatch({ type: "update_field", field: "email", value: e.target.value })
+              dispatch({
+                type: "update_field",
+                field: "email",
+                value: e.target.value,
+              })
             }
             className="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="password" className="block text-lg font-semibold mb-2">
+          <label
+            htmlFor="password"
+            className="block text-lg font-semibold mb-2"
+          >
             Password:
           </label>
           <input
-          required
+            required
             type="password"
             id="password"
             value={state.password}
             onChange={(e) =>
-              dispatch({ type: "update_field", field: "password", value: e.target.value })
+              dispatch({
+                type: "update_field",
+                field: "password",
+                value: e.target.value,
+              })
             }
             className="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
