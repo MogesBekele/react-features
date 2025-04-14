@@ -5,6 +5,7 @@ import UseRef from './component/UseRef'
 import Footer from './component/Footer'
 import Navbar from './component/Navbar'
 import UseMemo from './component/UseMemo'
+import UseReducer from './component/useReducer'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <UseRef/>
       <UseMemo />
       <Footer/>
+      <UseReducer/>
       
     </div>
   )
