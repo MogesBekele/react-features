@@ -133,7 +133,6 @@ const UseReducer = () => {
         </div>
       </form>
       <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 w-full max-w-md mt-6">
-       
         <p className="text-2xl font-bold mb-4 mt-4">Counter Value:</p>
         <p className="text-3xl font-bold">{value}</p>
         <div className="flex space-x-4 mt-4">
@@ -151,7 +150,10 @@ const UseReducer = () => {
           </button>
           <button
             onClick={() => dispatchValue({ type: "reset" })}
-            className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition duration-300">Reset</button>
+            className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition duration-300"
+          >
+            Reset
+          </button>
         </div>
       </div>
     </div>
