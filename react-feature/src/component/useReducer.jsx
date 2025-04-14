@@ -7,6 +7,18 @@ const initialState = {
   password: "",
 };
 
+const intialValue = 0;
+const reducerValue = (state, action) => {
+  switch (action.type) {
+    case "increment":
+      return state + 1;
+    case "decrement":
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
 // Reducer function to handle form state updates
 const reducer = (state, action) => {
   switch (action.type) {
@@ -24,6 +36,7 @@ const reducer = (state, action) => {
 
 const UseReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [value, dispatchValue] = useReducer(reducerValue, intialValue);
 
   const handleSubmit = (e) => {
     e.preventDefault();
