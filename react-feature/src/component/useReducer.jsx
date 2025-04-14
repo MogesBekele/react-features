@@ -51,7 +51,7 @@ const UseReducer = () => {
       id="usereducer"
       className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 text-white p-6 pt-26"
     >
-      <h1 className="text-4xl font-bold mb-6">useReducer Form Example</h1>
+      <h1 className="text-4xl font-bold mb-6">useReducer Examples</h1>
       <form
         onSubmit={handleSubmit}
         className="bg-white text-gray-800 rounded-lg shadow-lg p-6 w-full max-w-md"
