@@ -43,6 +43,7 @@ const UseReducer = () => {
             Name:
           </label>
           <input
+          required
             type="text"
             id="name"
             value={state.name}
@@ -57,6 +58,7 @@ const UseReducer = () => {
             Email:
           </label>
           <input
+          required
             type="email"
             id="email"
             value={state.email}
@@ -71,6 +73,7 @@ const UseReducer = () => {
             Password:
           </label>
           <input
+          required
             type="password"
             id="password"
             value={state.password}
