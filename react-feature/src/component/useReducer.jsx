@@ -36,12 +36,4 @@ const UseReducer = () => {
   )
 }
 
-const useReducer = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default useReducer
+export default UseReducer
