@@ -6,6 +6,7 @@ import Footer from './component/Footer'
 import Navbar from './component/Navbar'
 import UseMemo from './component/UseMemo'
 import UseReducer from './component/useReducer'
+import UseCallBack from './component/UseCallBack'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <UseRef/>
       <UseMemo />
       <UseReducer/>
+      <UseCallBack/>
       <Footer/>
       
     </div>

@@ -32,6 +32,11 @@ const Navbar = () => {
                 UseReducer
               </a>
             </li>
+            <li>
+              <a href="#usecallback" className="hover:text-blue-400">
+                UseCallback
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
