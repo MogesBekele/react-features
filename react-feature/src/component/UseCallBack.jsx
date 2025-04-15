@@ -1,5 +1,29 @@
 import React, { useState, useCallback } from "react";
 
+
+// Here’s an example of a component that demonstrates the use of the useCallback hook to optimize a function passed as a prop to a child component:
+
+// Updated UseCallBack.jsx:
+// Key Features:
+// useCallback Hook:
+
+// The increment and decrement functions are memoized using useCallback to prevent unnecessary re-renders of the Button component.
+// Child Component Optimization:
+
+// The Button component is wrapped in React.memo to ensure it only re-renders when its props change.
+// Separate State:
+
+// The otherState is updated independently to demonstrate how useCallback prevents re-renders of the Button component when unrelated state changes.
+// Styling:
+
+// Styled with Tailwind CSS for a clean and modern design.
+// Behavior:
+// Clicking "Increment" or "Decrement" updates the count state.
+// Clicking "Increment Other State" updates the otherState without re-rendering the Button components.
+// The console logs show that the Button components only re-render when their respective handleClick functions change.
+// Result:
+// This example demonstrates how useCallback can optimize performance by memoizing functions and preventing unnecessary re-renders of child components.
+
 const Button = React.memo(({ handleClick, children }) => {
   console.log(`Rendering button - ${children}`);
   return (
