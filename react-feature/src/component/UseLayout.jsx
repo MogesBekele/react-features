@@ -36,6 +36,27 @@ const UseLayout = () => {
           {boxSize.width} x {boxSize.height}
         </span>
       </p>
+      <h1 className="text-4xl font-bold mb-6 text-center">useLayoutEffect Scroll Example</h1>
+      <p className="text-lg mb-8 text-center max-w-2xl mx-auto">
+        This example demonstrates how to use the <span className="font-semibold">useLayoutEffect</span> hook to scroll a specific element into view when the component renders.
+      </p>
+      <div className="space-y-8">
+        <div className="h-64 bg-white text-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+          <p>Scroll down to see the highlighted section!</p>
+        </div>
+        <div className="h-64 bg-white text-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+          <p>Keep scrolling...</p>
+        </div>
+        <div
+          ref={scrollRef}
+          className="h-64 bg-yellow-400 text-gray-800 rounded-lg shadow-lg flex items-center justify-center"
+        >
+          <p className="text-xl font-bold">I am scrolled into view!</p>
+        </div>
+        <div className="h-64 bg-white text-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+          <p>More content below...</p>
+        </div>
+      </div>
     </div>
   );
 };
