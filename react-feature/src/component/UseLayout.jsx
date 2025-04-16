@@ -19,7 +19,7 @@ const UseLayout = () => {
   }, []);
 
   return (
-    <div id="uselayout" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 text-white p-6">
+    <div id="uselayout" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 text-white p-6 pt-26">
       <h1 className="text-4xl font-bold mb-6">useLayoutEffect Example</h1>
       <p className="text-lg mb-8 text-center max-w-2xl">
         This is a demonstration of the <span className="font-semibold">useLayoutEffect</span> hook in React. It is used to measure the dimensions of a DOM element before the browser repaints.
