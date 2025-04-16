@@ -12,6 +12,10 @@ const UseLayout = () => {
       height: box.height,
     });
   }, []);
+  useLayoutEffect(() => {
+    // Scroll the element into view
+    scrollRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
 
   return (
     <div id="uselayout" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 text-white p-6">
