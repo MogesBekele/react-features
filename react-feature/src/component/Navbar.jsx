@@ -44,7 +44,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#customhook" className="hover:text-blue-400">
-                UseLayoutEffect
+                Custom Hook
               </a>
             </li>
           </ul>
