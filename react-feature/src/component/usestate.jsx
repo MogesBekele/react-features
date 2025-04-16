@@ -34,7 +34,7 @@ const Usestate = () => {
   return (
     <div id="usestate"
       className={`flex flex-col items-center justify-center min-h-screen ${
-        isDarkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-800"
+        isDarkMode ?  "bg-gray-100 text-gray-800":"bg-gray-800 text-white"
       } transition duration-500`}
     >
          <h1 className="text-5xl font-bold mb-6">useState Example</h1>
