@@ -37,6 +37,11 @@ const Navbar = () => {
                 UseCallback
               </a>
             </li>
+            <li>
+              <a href="#uselayout" className="hover:text-blue-400">
+                UseLayoutEffect
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

@@ -7,6 +7,7 @@ import Navbar from './component/Navbar'
 import UseMemo from './component/UseMemo'
 import UseReducer from './component/useReducer'
 import UseCallBack from './component/UseCallBack'
+import UseLayout from './component/UseLayout'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <UseMemo />
       <UseReducer/>
       <UseCallBack/>
+      <UseLayout/>
       <Footer/>
       
     </div>
