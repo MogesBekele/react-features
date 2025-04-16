@@ -21,7 +21,7 @@ const UseLayout = () => {
       </p>
       <div
         ref={boxRef}
-        className="bg-white text-gray-800 rounded-lg shadow-lg p-6 w-64 h-32 flex items-center justify-center"
+        className="bg-white text-gray-800 rounded-lg shadow-lg p-6 w-72 h-32 flex items-center justify-center"
       >
         Resize Me!
       </div>
