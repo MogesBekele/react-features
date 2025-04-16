@@ -3,6 +3,7 @@ import React, { useState, useLayoutEffect, useRef } from "react";
 const UseLayout = () => {
   const [boxSize, setBoxSize] = useState({});
   const boxRef = useRef(null);
+  const scrollRef = useRef(null);
 
   useLayoutEffect(() => {
     // Measure the dimensions of the box
