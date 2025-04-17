@@ -63,4 +63,5 @@ export default CustomHook;
 // By moving logic into a custom hook, components focus on rendering UI rather than managing state or side effects.
 // Improved Maintainability:
 // Logic is centralized in the custom hook, making it easier to update or debug.
-
+// Reusability:
+// The same hook can be used in multiple components with different inputs.
