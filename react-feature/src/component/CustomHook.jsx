@@ -50,3 +50,17 @@ export default CustomHook;
 // They can use other React hooks like useState, useEffect, useReducer, etc., to manage state and side effects.
 // Example:
 // The useFetch hook in your code is a custom hook. It encapsulates the logic for fetching data from an API, managing loading and error states, and returning the fetched data.
+// How It Works:
+// Input:
+// The useFetch hook takes a url as its input.
+// Logic:
+// It uses useState to manage data, loading, and error states.
+// It uses useEffect to fetch data from the provided url when the component mounts or when the url changes.
+// Output:
+// It returns an object containing data, loading, and error, which can be used in any component.
+// Benefits of Custom Hooks:
+// Cleaner Components:
+// By moving logic into a custom hook, components focus on rendering UI rather than managing state or side effects.
+// Improved Maintainability:
+// Logic is centralized in the custom hook, making it easier to update or debug.
+
