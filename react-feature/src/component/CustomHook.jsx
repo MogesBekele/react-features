@@ -31,3 +31,22 @@ const CustomHook = () => {
 };
 
 export default CustomHook;
+
+
+// A custom hook in React is a reusable JavaScript function that starts with the prefix use and allows you to encapsulate and reuse stateful logic across multiple components. Custom hooks leverage React's built-in hooks (like useState, useEffect, etc.) to create modular and reusable functionality.
+
+// Key Features of Custom Hooks:
+// Reusability:
+
+// Custom hooks allow you to extract and reuse logic across multiple components, reducing code duplication.
+// Encapsulation:
+
+// They encapsulate complex logic (e.g., fetching data, managing forms, handling timers) into a single function, making components cleaner and easier to maintain.
+// Naming Convention:
+
+// Custom hooks must start with the prefix use to follow React's rules of hooks and ensure proper behavior.
+// Stateful Logic:
+
+// They can use other React hooks like useState, useEffect, useReducer, etc., to manage state and side effects.
+// Example:
+// The useFetch hook in your code is a custom hook. It encapsulates the logic for fetching data from an API, managing loading and error states, and returning the fetched data.
