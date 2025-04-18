@@ -47,6 +47,12 @@ const Navbar = () => {
                 Custom Hook
               </a>
             </li>
+            <li>
+              <a href="#closure" className="hover:text-blue-400">
+                Closure
+
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
