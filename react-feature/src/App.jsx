@@ -9,6 +9,7 @@ import UseReducer from './component/useReducer'
 import UseCallBack from './component/UseCallBack'
 import UseLayout from './component/UseLayout'
 import CustomHook from './component/CustomHook'
+import Closure from './component/Closure'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <UseCallBack/>
       <UseLayout/>
       <CustomHook/>
+      <Closure/>
       <Footer/>
       
     </div>
