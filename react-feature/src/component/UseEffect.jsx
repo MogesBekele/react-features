@@ -40,7 +40,10 @@ const UseEffect = () => {
   }, []);
 
   return (
-    <div id="useeffect" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white p-8 pt-26">
+    <div
+      id="useeffect"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white p-8 pt-26"
+    >
       <h1 className="text-5xl font-extrabold mb-8 lg:mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
         useEffect Example
       </h1>
