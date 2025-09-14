@@ -25,7 +25,7 @@ const UseEffect = () => {
       setSeconds((prevSeconds) => {
         if (prevSeconds >= 30) {
           clearInterval(interval); // Clear the interval after 30 seconds
-          return prevSeconds; // Stop incrementing
+          return prevSeconds; // Stop incre
         }
         return prevSeconds + 1;
       });
