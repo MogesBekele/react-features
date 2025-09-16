@@ -7,10 +7,15 @@ const CustomHook = () => {
   );
 
   return (
-    <div id="customhook" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 text-white p-6">
+    <div
+      id="customhook"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 text-white p-6"
+    >
       <h1 className="text-4xl font-bold mb-6">Custom Hook Example</h1>
       <p className="text-lg mb-8 text-center max-w-2xl">
-        This is a demonstration of a <span className="font-semibold">custom hook</span> in React. The custom hook fetches data from an API and handles loading and error states.
+        This is a demonstration of a{" "}
+        <span className="font-semibold">custom hook</span> in React. The custom
+        hook fetches data from an API and handles loading and error states.
       </p>
       <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6 w-full max-w-3xl">
         {loading && <p className="text-center text-blue-500">Loading...</p>}
@@ -31,7 +36,6 @@ const CustomHook = () => {
 };
 
 export default CustomHook;
-
 
 // A custom hook in React is a reusable JavaScript function that starts with the prefix use and allows you to encapsulate and reuse stateful logic across multiple components. Custom hooks leverage React's built-in hooks (like useState, useEffect, etc.) to create modular and reusable functionality.
 
